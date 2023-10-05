@@ -17,6 +17,11 @@ a {
 .post {
     text-align: center;
     background-color: gainsboro;
+    padding: 10px;
+    margin: 5px auto;
+    width: 420px;
+    display: inline-block;
+    border-radius: 15px;
 }
 
 a:hover {
@@ -26,4 +31,38 @@ a:hover {
 .footer p{
     text-align: center;
     background-color:gainsboro;
+    display: flex;
+    border-radius: 15px;
+    margin: 5px auto;
+    margin-top: 5px;
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div ~ p {
+    font-family: "Gill Sans Extrabold", sans-serif;
+  }
+
+  .sidenav {
+    background-color: gainsboro; /* Set the background color */
+    width: 200px; /* Set the width of the sidebar */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Style for links within the sidebar */
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+  @media (max-width: 800px) {
+    .sidenav {
+        display: none;
+    }
 }
