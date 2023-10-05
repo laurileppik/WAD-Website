@@ -1,0 +1,24 @@
+.content {
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 200px;
+    height:100px;
+}
+
+
+
+.bodyGroup {
+    display: block;
+}
+
+.selectfileGroup {
+
+}
+
+.createpostButton {
+    text-decoration-color: grey;
+    text-align: center;
+}
+
