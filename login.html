@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="topnav">
-        <a id="homenav" href="#home">Home</a>
-        <img id="pfpic" src="img/pfpic.png" alt="Profile pic">
+        <a id="homenav" href="index.html">Home</a>
+        <img id="pfpic" src="res/style/images/pfpic.png" alt="Profile pic">
     </div>
 
     <div class="content">
@@ -21,10 +21,12 @@
             </div>
 
             <div class="details">
-                <input type="text" id="email" name="email" placeholder="Email">
-                <input type="text" id="password" name="password" placeholder="Password">
+                <form action="#todo">
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <a href="index.html"><input type="submit" value="Log in"></a>
+                </form>
             </div>
-            <button type="button" id="loginbutton">Log in</button>
             <p class="blueText" id="forgotPass">Forgot password</p>
     </div>
 </body>
