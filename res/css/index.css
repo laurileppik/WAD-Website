@@ -14,55 +14,141 @@ a {
     text-decoration:none
 }
 
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gainsboro;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+}
+
+.topnav .links {
+    display: flex;
+    align-items: center;
+}
+
+.post .like {
+    display: flex;
+    align-items: left;
+}
+
+.topnav > p,a {
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .post {
-    text-align: center;
+    text-align: justify;
     background-color: gainsboro;
     padding: 10px;
     margin: 5px auto;
-    width: 420px;
+    width: 800px;
     display: inline-block;
     border-radius: 15px;
+}
+
+.post img {
+    max-width:100%;
+    max-height: 100%;
 }
 
 a:hover {
     background-color: gold;
 }
 
-.footer p{
-    text-align: center;
-    background-color:gainsboro;
+.footer .text{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 1rem 2rem;
     border-radius: 15px;
-    margin: 5px auto;
-    margin-top: 5px;
-    position: relative;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   div ~ p {
     font-family: "Gill Sans Extrabold", sans-serif;
   }
 
-  .sidenav {
-    background-color: gainsboro; /* Set the background color */
-    width: 200px; /* Set the width of the sidebar */
-    padding: 20px; /* Adjust padding as needed */
+  .container-left {
+    height: 95%;
+    width: 150px;
+    position: absolute;
+    top: 15%;
+    left: 5;
+    padding-top: 4.75%;
+    background-color: gainsboro;
+    border-radius: 15px;
 }
 
-/* Style for links within the sidebar */
-.sidenav a {
-    padding: 10px 15px;
-    text-decoration: none;
-    color: black;
-    display: block;
+.container-right{
+    height: 95%;
+    width: 150px;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    padding-top: 4.75%;
+    background-color: gainsboro;
+    border-radius: 15px;
+    margin: 0 5px 0 0;
 }
 
-  @media (max-width: 800px) {
-    .sidenav {
+  @media (max-width: 1150px) {
+    .container-right {
+        display: none;
+    }
+
+    .container-left {
         display: none;
     }
 }
+
+.poster {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 5px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    flex-grow: 1;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.post .image {
+    background-color:rgba(0, 0, 0, 0);
+    align-items: left;
+}
+
+@media screen and (max-width: 760px) {
+    .post {
+        width: 100%;
+        margin: 10px 0px 5px 5px;
+    }
+    .topnav {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .footer {
+        
+    }
+    
+}
+
