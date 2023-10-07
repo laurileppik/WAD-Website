@@ -152,3 +152,11 @@ a:hover {
     
 }
 
+
+
+.navlinks {
+    display: flex;
+    width: max(15%, 150px);
+    justify-content:space-between;
+    position: sticky;
+}
