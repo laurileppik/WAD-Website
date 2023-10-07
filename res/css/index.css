@@ -26,6 +26,9 @@ a {
 .topnav .navlinks {
     display: flex;
     align-items: center;
+    width: max(5%, 150px);
+    justify-content:space-between;
+    position: sticky;
 }
 
 .post .like {
@@ -154,9 +157,3 @@ a:hover {
 
 
 
-.navlinks {
-    display: flex;
-    width: max(15%, 150px);
-    justify-content:space-between;
-    position: sticky;
-}
