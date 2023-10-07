@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +9,33 @@
 </head>
 <body>
     <div class="topnav">
-        <a id="homenav" href="#home">Home</a>
-        <img id="pfpic" src="img/pfpic.png" alt="Profile pic">
+        <div class="navlinks">
+            <a id="homenav" href="index.html">Home</a>
+        </div>
+            <img id="pfpic" src="res/images/hmt.gif" alt="Profile pic">
     </div>
 
     <div class="content">
 
-        <div class="bodyGroup">
-            <label for="post" class="blackText">Post<br>body</label>
-            <textarea rows = 8 cols=30>textarea</textarea>
-        </div>
+        <!--<form action="">-->
 
-        <div class="selectfileGroup">
-            <p class="blackText">Select<br>file</p>
-            <button type="button" id="choosefile" class="choosefileButton">Choose File</button>
-        </div>
+            <div class="bodyGroup">
+                <label class="blackText">Post<br>body</label>
+                <textarea rows=8 cols=30 placeholder="textarea"></textarea>
+            </div>
 
-        <div class="createpostButton">
-            <button type="submit" id="createpost">Create post</button>
-        </div>
+            <div class="selectfileGroup">
+                <p class="blackText">Select<br>file</p>
+                <a href="index.html"><input type="submit" value="Choose file" id="choosefileButton"></a>
+            </div> 
+
+            <div class="createpostGroup">
+                <a href="index.html" id="createpostA"><input type="submit" value="Create post" id="createpostButton"></a>
+            </div>
+
+    
+
+        <!--</form>-->
 
     </div>
 </body>

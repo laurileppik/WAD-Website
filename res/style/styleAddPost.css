@@ -4,11 +4,6 @@
 
 }
 
-input[type="text"] {
-    width: 200px;
-    height:100px;
-}
-
 textarea{
     margin-left: 40px;
     resize: none;
@@ -19,19 +14,52 @@ textarea{
     display: flex;
 }
 
-.choosefileButton{
-    margin-left: 30px;
+#choosefileButton{
+    font-size: 12px;
+    margin-left: 28px;
 }
 
 .selectfileGroup {
     margin-top: 40px;
     display: flex;
-
 }
 
-.createpostButton {
+#createpostButton {
+    font-size: 12px;
     margin-top: 30px;
-    text-decoration-color: grey;
     text-align: center;
+    background-color: grey;
 }
 
+#createpostA{
+    text-decoration: dashed;
+}
+
+p::first-letter{
+    color:darkslategray;
+}
+
+div label::first-letter{
+    color:darkslategray;
+}
+
+div > textarea{
+    background-color: lightgoldenrodyellow;
+}
+
+p + a{
+    text-decoration: dashed;
+}
+
+@media(max-width:800px){
+    .content{
+        padding-left: 10px;
+    }
+    textarea{
+        margin-left: 20px;
+    }
+    .choosefileButton{
+        margin-left: 8px;
+    }
+
+}
