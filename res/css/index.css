@@ -23,7 +23,7 @@ a {
     border-radius: 15px;
 }
 
-.topnav .links {
+.topnav .navlinks {
     display: flex;
     align-items: center;
 }
