@@ -1,5 +1,7 @@
 .content {
     text-align: left;
+    display: block;
+
 }
 
 input[type="text"] {
@@ -7,13 +9,17 @@ input[type="text"] {
     height:100px;
 }
 
+textarea{
+    resize: none;
+}
 
 
 .bodyGroup {
-    display: block;
+    display: flex;
 }
 
 .selectfileGroup {
+    display: flex;
 
 }
 

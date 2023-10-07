@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>addPost</title>
     <link rel="stylesheet" type="text/css" href="res/css/style.css">
-    <link rel="stylesheet" type="text/css" href="res/css/styleAddPost.css">
+    <link rel="stylesheet" type="text/css" href="res/style/styleAddPost.css">
 </head>
 <body>
     <div class="topnav">
@@ -19,15 +19,13 @@
 
         <div class="bodyGroup">
             <label for="post" class="blackText">Post<br>body</label>
-            <input type="text" id="post" name="post" placeholder="textarea"/>
+            <textarea rows = 8 cols=30>textarea</textarea>
         </div>
 
         <div class="selectfileGroup">
             <p class="blackText">Select<br>file</p>
             <button type="button" id="choosefile" class="choosefileButton">Choose File</button>
         </div>
-
-        <br>
 
         <div class="createpostButton">
             <button type="submit" id="createpost">Create post</button>
