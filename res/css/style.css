@@ -23,7 +23,8 @@
 }
 
 #homenav:hover {
-    color: gray
+    color: gray;
+    background-color: yellow;
 }
 
 .content {
