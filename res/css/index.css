@@ -84,25 +84,31 @@ a:hover {
   }
 
   .container-left {
-    height: 95%;
+    height: 100%;
     width: 150px;
-    position: absolute;
+    position: fixed;
     top: 15%;
     left: 5;
     padding-top: 4.75%;
     background-color: gainsboro;
     border-radius: 15px;
+    margin-bottom: 10%;
+    max-height: calc(100% - 35%);
 }
 
+
+
 .container-right{
-    height: 95%;
+    height: 100%;
     width: 150px;
-    position: absolute;
+    position: fixed;
     top: 15%;
     right: 0;
     padding-top: 4.75%;
     background-color: gainsboro;
     border-radius: 15px;
+    margin-bottom: 10%;
+    max-height: calc(100% - 35%);
     margin: 0 5px 0 0;
 }
 
@@ -147,10 +153,6 @@ a:hover {
     }
     .topnav {
         margin: 0px 0px 0px 0px;
-    }
-
-    .footer {
-        
     }
     
 }
