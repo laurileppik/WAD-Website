@@ -31,11 +31,6 @@ a {
     position: sticky;
 }
 
-.post .like {
-    display: flex;
-    align-items: left;
-}
-
 .topnav > p,a {
     font-weight: 500;
     font-size: 20px;
@@ -74,10 +69,8 @@ a:hover {
 
 .flex-container {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 0.2rem;
   }
 
   div ~ p {
@@ -87,7 +80,7 @@ a:hover {
   .container-left {
     width: 13%;
     position: absolute;
-    left: 0;
+    left: 5;
     background-color: gainsboro;
     border-radius: 15px;
     margin: 0 5px 0 0;
@@ -122,6 +115,10 @@ a:hover {
     padding: 5px;
 }
 
+.post p {
+    overflow-wrap: anywhere;
+}
+
 .left {
     display: flex;
     align-items: center;
@@ -147,5 +144,7 @@ a:hover {
     .topnav {
         margin: 0px 0px 0px 0px;
     }
+
+    body, html { overflow-x:hidden; }
     
 }
