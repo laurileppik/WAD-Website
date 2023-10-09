@@ -29,7 +29,7 @@
 
 .content {
     width: min(50%, 800px);
-    display: flexbox;
+    display: flex;
     background-color: gainsboro;
     margin: 2rem auto;
     height: 20rem;
