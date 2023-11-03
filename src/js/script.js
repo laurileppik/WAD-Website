@@ -1,4 +1,10 @@
+/** 
+ * Fetch from online endpoint (URI)
 fetch('https://api.npoint.io/5c80200ef7e4b2ee9850')
+**/
+
+// Integrated JSON fetch
+fetch('res/json/myjson.json')
     .then((response) => response.json())
     .then(json => {
         console.log(json);
@@ -13,6 +19,20 @@ fetch('https://api.npoint.io/5c80200ef7e4b2ee9850')
             // Create the poster element for each post
             const poster = document.createElement('div');
             poster.className = 'poster';
+
+    
+            if (postData.hasOwnProperty("image")) {
+                const imageUrl = postData.image;
+
+                // Create an image element and set its source
+                const imgElement = document.createElement('img');
+                imgElement.src = imageUrl;
+
+                // Append the image element to a container in your HTML
+                postElement.appendChild(imgElement);
+
+            }
+            
 
             // Create the left part of the poster
             const left = document.createElement('div');
@@ -43,3 +63,26 @@ fetch('https://api.npoint.io/5c80200ef7e4b2ee9850')
             postContainer.appendChild(postElement);
         });
     });
+
+    document.querySelector(".user-pic").addEventListener("click", function() {
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+    
+    // Close the dropdown when clicking anywhere outside of it
+    window.addEventListener("click", function(event) {
+        if (!event.target.matches(".user-pic")) {
+            var dropdowns = document.querySelectorAll(".dropdown-content");
+            dropdowns.forEach(function(dropdown) {
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                }
+            });
+        }
+    });
+    
+    

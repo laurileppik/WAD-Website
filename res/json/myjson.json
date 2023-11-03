@@ -2,7 +2,8 @@
     "authorName": "John Cena",
     "createTime":"Oct 28, 2023",
     "id": 10,
-    "body": "Hello. Its a me - Mario WOHOOOOOOOOOOOOOOOOOOOOO!"
+    "body": "Hello. Its a me - Mario WOHOOOOOOOOOOOOOOOOOOOOO!",
+    "image": "res/images/President_Barack_Obama.jpg"
 },{
     "authorName": "Serena Williams",
     "createTime":"Oct 15, 2023",
@@ -22,7 +23,8 @@
     "authorName": "John Wick",
     "createTime":"Oct 8, 2023",
     "id": 6,
-    "body": "Very good weather today."
+    "body": "Very good weather today.",
+    "image": "res/images/hmt.gif"
 },{
     "authorName": "Mark Clattenburg",
     "createTime":"Oct 7, 2023",
