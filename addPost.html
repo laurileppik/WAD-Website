@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>addPost</title>
     <link rel="stylesheet" type="text/css" href="res/css/style.css">
-    <link rel="stylesheet" type="text/css" href="res/style/styleAddPost.css">
+    <link rel="stylesheet" type="text/css" href="res/css/styleAddPost.css">
 </head>
 <body>
     <div class="topnav">
         <div class="navlinks">
             <a id="homenav" href="index.html">Home</a>
         </div>
-            <img id="pfpic" src="res/images/hmt.gif" alt="Profile pic">
+        <div class="dropdown-container">
+            <img class="user-pic" src="res/images/hmt.gif" alt="My picture" height="70">
+
+            <div class="dropdown-content">
+                <span class="user-name">John Doe</span>
+                <span class="user-email">john.doe@ut.ee</span>
+                <span class="user-logout">logout</span>
+            </div>
+        </div>
     </div>
 
+    <script type="text/javascript" src="src/js/script.js"></script> 
+    
     <div class="content">
 
         <!--<form action="">-->

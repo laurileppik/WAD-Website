@@ -46,14 +46,16 @@ a {
     border-radius: 15px;
 }
 
+
+div{
+    font-family: "Gill Sans Extrabold", sans-serif
+}
+
 .post img {
     max-width:100%;
     max-height: 100%;
 }
 
-a:hover {
-    background-color: gold;
-}
 
 .footer .text{
     display: flex;
@@ -71,31 +73,36 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    bottom: 30px;
+    }
 
-  div ~ p {
-    font-family: "Gill Sans Extrabold", sans-serif;
-  }
+    div ~ p {
+        font-family: "Gill Sans Extrabold", sans-serif;
+    }
 
-  .container-left {
+    .container-left {
     width: 13%;
     position: absolute;
     left: 5;
+    bottom: 5px;
     background-color: gainsboro;
     border-radius: 15px;
-    margin: 0 5px 0 0;
-    height: 105rem;
-}
+    height:100%;
+    }
 
-.container-right{
-    width: 13%;
-    position: absolute;
-    right: 0;
-    background-color: gainsboro;
-    border-radius: 15px;
-    margin: 0 5px 0 0;
-    height: 105rem;
-}
+    .container-right{
+        width: 13%;
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+        background-color: gainsboro;
+        border-radius: 15px;
+        height: 100%;
+    }
+
 
   @media (max-width: 1150px) {
     .container-right {
@@ -135,27 +142,11 @@ a:hover {
     align-items: left;
 }
 
-.dropdown-container {
-    position: relative;
-    display: inline-block;
-}
-
-.user-pic {
-    cursor: pointer;
-}
-
-.dropdown-content {
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px;
-    right: 0px
-}
-
 span {
     display: block; 
 }
+
+
 
 
 

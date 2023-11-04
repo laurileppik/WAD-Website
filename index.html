@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,30 +6,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="res/css/style.css">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="res/css/style.css">
     <link rel="stylesheet" type="text/css" href="res/css/index.css">
 </head>
 
 <body>
     <div class="topnav">
         <div class="navlinks">
-            <a href="index.html">Home</a>
+            <a href="index.html" id="homenav">Home</a>
             <p> | </p>
-            <a href="addPost.html">addPost</a>
+            <a href="addPost.html" id="homenav">addPost</a>
         </div>
         <div class="dropdown-container">
-            <img class="user-pic" src="res/images/blankpfp.webp" width="50" height="50" alt="My picture">
+            <img class="user-pic" src="res/images/hmt.gif" alt="My picture" height="70">
 
             <div class="dropdown-content">
                 <span class="user-name">John Doe</span>
                 <span class="user-email">john.doe@ut.ee</span>
                 <span class="user-logout">logout</span>
             </div>
-
-
         </div>
     </div>
+
+
+    <!--
+    -->
+
+    <script type="text/javascript" src="src/js/script.js"></script> 
 
     <div class="flex-container" id="post-container">
         <div class="container-left">
@@ -42,7 +47,7 @@
     <footer class="footer">
         <div class="text">Footer</div>
     </footer>
-    <script type="text/javascript" src="src/js/script.js"></script> 
+    
 </body>
 
 </html>
